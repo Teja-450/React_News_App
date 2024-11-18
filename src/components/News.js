@@ -12,7 +12,7 @@ const News= (props)=> {
 
   
   const updateNews= async (pageNo = 1, shouldConcat = false)=> {
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=a5c65878d0f54607a452d2b7ef2d9914&page=${pageNo}&pagesize=${props.pageSize}`;
+    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=*******************&page=${pageNo}&pagesize=${props.pageSize}`;
     setLoading(true);
     props.setProgress(10);
     try {
