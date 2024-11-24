@@ -10,7 +10,7 @@ const News = (props) => {
   const [totalResults, setTotalResults] = useState(0);
 
   const updateNews = async (pageNo, shouldConcat = false) => {
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${pageNo}`;
+    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${pageNo}`;
     setLoading(true);
     props.setProgress(10);
 
@@ -37,6 +37,7 @@ const News = (props) => {
 
   useEffect(() => {
     updateNews(1);
+    // eslint-disable-next-line
   }, []);
 
   // Simplified fetchMoreData

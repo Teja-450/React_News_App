@@ -59,7 +59,6 @@ h1::before {
     height: 50px;
     margin: 20px 0;
 }
-  
 .loader img {
     width: 50px;
     animation: spin 1.5s linear infinite; /* Smooth spinning animation */

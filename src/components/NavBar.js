@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 //rce
-const NavBar = () => { 
+const NavBar = () => {
   return (
     <>
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
           <Link className="navbar-brand" to="/">
             Navbar
           </Link>
