@@ -1,0 +1,76 @@
+h1 {
+    font-family: 'Poppins', sans-serif; /* Clean, modern font */
+    font-size: 2.5rem; /* Larger, prominent title */
+    color: #333; /* Neutral dark gray */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+  
+.container.my-3 {
+    padding-top: 6rem; /* Ensures title clears the navbar */
+    text-align: center;
+}
+  
+h1::before {
+    content: "📰"; /* Adds an emoji above the title */
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+.row .col-md-4 {
+    margin-bottom: 20px; /* Adds spacing between rows */
+}
+  
+.news-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+  
+.news-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+  
+.news-card img {
+    width: 100%; /* Ensures consistent image size */
+    height: 180px; /* Fixed height for uniformity */
+    object-fit: cover; /* Crop images to fit */
+    border-bottom: 1px solid #ddd;
+}
+  
+.news-card h5 {
+    font-size: 1.25rem;
+    margin: 15px;
+    color: #333;
+}
+  
+.news-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 15px 15px;
+}
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 20px 0;
+}
+  
+.loader img {
+    width: 50px;
+    animation: spin 1.5s linear infinite; /* Smooth spinning animation */
+}
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+      
