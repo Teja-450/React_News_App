@@ -6,7 +6,7 @@ import LoadingBar from 'react-top-loading-bar'
 
 //import Loading from './components/Loading'
 const App=()=> {
-  const  apiKey='a5c65878d0f54607a452d2b7ef2d9914'
+  const  apiKey=process.env.REACT_APP_APIKEY;
   const [progress,setProgress] = useState(0);
   return (
     <div>
