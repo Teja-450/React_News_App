@@ -17,6 +17,5 @@ You may also see any lint errors in the console.
 
 ### Access to API key..
 
-You can get a free API key from "https://newsapi.org/" and replace the `******` in NewsItem.js file so that you can access the real time News.
-or you can get a premium API key from other providers.
+You can get a free API key from "https://newsapi.org/" and replace the "apiKey" in NewsItem.js file with your own api-key to get this website running
 
